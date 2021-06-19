@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// import 'theme.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Basic'),
+          title: Text(
+            'Flutter Basic Sands',
+            style: GoogleFonts.lato(),
+          ),
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.add_alert),
@@ -23,7 +28,9 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Text('Hello Sands 2021'),
+        body: Image.asset(
+          'assets/images/primary.png'
+        ),
       ),
     );
   }
