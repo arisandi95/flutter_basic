@@ -89,3 +89,4 @@ lint/tmp/
 .flutter-plugins-dependencies
 .packages
 pubspec.lock
+.dart_tool/
